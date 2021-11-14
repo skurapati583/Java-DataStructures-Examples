@@ -64,6 +64,13 @@
 - Map is a collection of key-value pairs
 - Doesn't gaurentee sorting order of keys, values
 
+### 8. Quick Sort
+
+- Based on Divide-and-Conquer technique
+- An element (either median or starting element) is chosen as pivot element
+- Partition the array such that all the elements less than pivot element are sent to left side of pivot element
+- All the elements greater than pivot are sent to right side of the pivot element
+
 
 ## Questions
 
