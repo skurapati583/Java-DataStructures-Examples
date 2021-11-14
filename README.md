@@ -34,3 +34,15 @@
 - First in First out (FIFO)
 - Insertion - enQueue through rear element
 - Deletion - deQueue through front element
+
+### 4. Tree
+
+- Just like trees, root, nodes, leaf node and edges are present
+- Tree can have as many child nodes
+- Includes height and depth
+- Depth - number of nodes from root to current node - length of path
+- Height of tree - one more than the depth of deepest node
+- Special types of tree like Binary tree has only two nodes maximum.
+- Strict Binary Tree - Each node has either two children or no children
+- Full Binary Tree - All the leaf nodes on same level
+- Complete Binary Tree - All leaf nodes are on last or last-1 level
