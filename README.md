@@ -71,6 +71,11 @@
 - Partition the array such that all the elements less than pivot element are sent to left side of pivot element
 - All the elements greater than pivot are sent to right side of the pivot element
 
+### 9. Binary Search
+
+- Binary search performs searching on sorted array
+- Searching starts with middle element of sorted array. If target element is less than middle element, then search in left side and continues there iteratively. 
+- If target element is greater than middle element, then search occurs in right side and continues there iteratively.
 
 ## Questions
 
