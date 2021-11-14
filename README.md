@@ -28,3 +28,9 @@
 - Find elements using Peek
 - Only one point of entry and remove of element - Top element
 - Example: Stack of books
+
+### 3. Queue
+
+- First in First out (FIFO)
+- Insertion - enQueue through rear element
+- Deletion - deQueue through front element
