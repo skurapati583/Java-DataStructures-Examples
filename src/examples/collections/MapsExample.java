@@ -1,4 +1,4 @@
-package examples;
+package examples.collections;
 
 import java.util.HashMap;
 

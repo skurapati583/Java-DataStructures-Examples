@@ -85,3 +85,12 @@ When string is created using new keyword, it would create brand new object and n
 ```Java
 String thirdName = new String("John");
 ```
+
+**2. Difference between ArrayList and LinkedList?**
+- Both are part of Collections framework
+- Both implement List interface and supports same methods
+- The difference is: how they are implemented behind the scenes
+- While retrieval of element, LinkedList is slower as it goes through next, previous pointers. Whereas ArrayList is faster because it access directly just like an array
+- While adding or removing elements, LinkedList is more efficient than ArrayList. In LinkedList, only the changed node is affected and remaining nodes are not. Whereas in ArrayList, Java has to create an entire new Array behind the scenes, copy the elements. 
+- For retrieval intensive programs, ArrayList is prefered
+- For programs more focused on adding/remove elements than retrieval, LinkedList is best bet and preferred
