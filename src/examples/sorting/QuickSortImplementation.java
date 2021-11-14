@@ -1,6 +1,5 @@
 package examples.sorting;
 
-import java.net.Socket;
 import java.util.Random;
 
 public class QuickSortImplementation {
