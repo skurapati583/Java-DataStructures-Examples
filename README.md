@@ -63,11 +63,12 @@
 ## Questions
 
 **1. Why strings are immutable?**
+
 String literals like below are stored in a shared String Pool. For example, consider below string literals.
 
 ```Java
 String name = "John";
-String anotherName = "John"
+String anotherName = "John";
 ```
 
 Here both the string variables are just references to same string object "John" created in shared string pool. If the strings aren't immutable, then change in variable will update other. Hence strings are made immutable. For security reasons.
