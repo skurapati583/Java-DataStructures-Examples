@@ -59,18 +59,29 @@
 - If end of list is reached, then again proceed step 1
 - Keep on swapping the pair of elements until no longer swap is required
 
+### 7. Maps and HashMaps
+
+- Map is a collection of key-value pairs
+- Doesn't gaurentee sorting order of keys, values
+
 
 ## Questions
 
 **1. Why strings are immutable?**
 
-String literals like below are stored in a shared String Pool. For example, consider below string literals.
+String literals like below are stored in a shared String Pool. For example:
 
 ```Java
 String name = "John";
 String anotherName = "John";
 ```
 
-Here both the string variables are just references to same string object "John" created in shared string pool. If the strings aren't immutable, then change in variable will update other. Hence strings are made immutable. For security reasons.
+Here both the string variables are just references to same string object "John" created in shared string pool. If the strings aren't immutable, then change in one variable will update other. Hence strings are made immutable. For security reasons.
 
 Also strings immutability makes them thread-safe.
+
+When string is created using new keyword, it would create brand new object and not in shared string pool.
+
+```Java
+String thirdName = new String("John");
+```
