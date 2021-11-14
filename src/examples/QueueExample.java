@@ -3,6 +3,7 @@ package examples;
 class QueueExample {
     public static void main(String[] args) {
         Queue queue = new Queue();
+
         queue.enQueue(5);
         queue.enQueue(34);
         queue.enQueue(54);
@@ -10,6 +11,7 @@ class QueueExample {
         queue.enQueue(87);
 
         queue.show();
+        System.out.println("Removing elements");
 
         System.out.printf("The removed value is: %d%n", queue.deQueue());
         System.out.printf("The removed value is: %d%n", queue.deQueue());
