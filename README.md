@@ -12,11 +12,19 @@
 - Last node's address part is null
 - All nodes are stored in vaious locations unline arrays and hence it is expandable
 - Adding and deleting nodes is made by pointing the references to following elements
+- Example: Alt-Tab option in Windows, links next tabs
 
-Drawbacks: 
+**Drawbacks:** 
 - Slow when compared to array
 - In order to access any node value, need to start with head and proceed for searching and adding overhead
 - In array, accessed by index, fetch the value randomly and hence fast
 
-### Implemenetation in Java
+### 2. Stack
 
+- An Abstract Data Type (ADT) in Data Structures
+- LIFO - Last In First Out
+- Add element using Push
+- Remove element from Pop
+- Find elements using Peek
+- Only one point of entry and remove of element - Top element
+- Example: Stack of books
