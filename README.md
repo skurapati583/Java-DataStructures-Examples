@@ -52,3 +52,9 @@
 - Divide the input array recursively until only one element array are created i.e. left and right halves arrays combinations
 - In each recursion, sort the elements in left and right halves respectively and merge both halves
 - Continue the recursion until all the arrays are merged and elements are sorted
+
+### 6. Bubble Sort
+
+- Beginning of input list, pair of elements are picked and swap the elements in sorted order. Once sorted, proceeded to next pair. 
+- If end of list is reached, then again proceed step 1
+- Keep on swapping the pair of elements until no longer swap is required
