@@ -46,3 +46,9 @@
 - Strict Binary Tree - Each node has either two children or no children
 - Full Binary Tree - All the leaf nodes on same level
 - Complete Binary Tree - All leaf nodes are on last or last-1 level
+
+### 5. Merge Sort
+
+- Divide the input array recursively until only one element array are created i.e. left and right halves arrays combinations
+- In each recursion, sort the elements in left and right halves respectively and merge both halves
+- Continue the recursion until all the arrays are merged and elements are sorted
