@@ -81,6 +81,14 @@
 
 - BufferedWriter and BufferedReader classes are simplest classes for read/write of text file
 
+### Comparable & Comparator
+
+- To enable sorting of any class with customized logic, the class should implement Comparable Interface and override compareTo method. Inside compareTo method return positive integer for positive condition and negative for negative condition
+- Comparator interface is another alternative for sorting of user defined class objects. Comparator interface logic should be defined and its object shall be passed to below call
+```Java
+Collections.sort(list, comparatorObj);
+```
+
 ## Questions
 
 **1. Why strings are immutable?**
@@ -142,3 +150,13 @@ public boolean equals(Object obj) {
     return true; // or return false
 }
 ```
+
+**6. MultiThreading via Thread class via Runnable interface**
+- Multithreading can be implemented by either extending Thread class or implementing Runnable interface
+- In both cases, the class should override run() method and include the logic
+- When the classes doesn't need to extend any other class, then extends approach is suitable
+- Implementing Runnable interface gives flexibility to extend other classes
+- Just calling run() method inside thread, doesn't initiate a seperate thread. Executes in main() thread
+- start() method should be called in order to execute in seperate thread
+- isAlive() method returns if the current thread is alive or not
+- join() method stops the program until the current thread is completed
