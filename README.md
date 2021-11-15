@@ -77,6 +77,10 @@
 - Searching starts with middle element of sorted array. If target element is less than middle element, then search in left side and continues there iteratively. 
 - If target element is greater than middle element, then search occurs in right side and continues there iteratively.
 
+### 10. Read/Write Text File
+
+- BufferedWriter and BufferedReader classes are simplest classes for read/write of text file
+
 ## Questions
 
 **1. Why strings are immutable?**
@@ -106,3 +110,13 @@ String thirdName = new String("John");
 - While adding or removing elements, LinkedList is more efficient than ArrayList. In LinkedList, only the changed node is affected and remaining nodes are not. Whereas in ArrayList, Java has to create an entire new Array behind the scenes, copy the elements. 
 - For retrieval intensive programs, ArrayList is prefered
 - For programs more focused on adding/remove elements than retrieval, LinkedList is best bet and preferred
+
+**3. Checked Exception vs Unchecked Exception**
+
+- Checked Exceptions are basically compile time exceptions where compiler expects us to handle those exceptions. The program wouldn't run without handling such exceptions.
+Example: FileNotFoundException (while reading file), InterruptedException, IOException (while writing file), SQLException (SQL Exception), MalformedURLException (URL)
+- All checked exceptions are direct sub-classes for Exception class
+- Unchecked Exceptions are run-time exceptions. Java compiler allows the program with possibility of runtime exceptions to execute but throws exception at runtime. Examples: NullPointerException, NumberFormatException, ClassCastException, IndexOutOfBoundsException
+- All unchecked exceptions are direct sub-classes of RuntimeException, which inturn sub-class of Exception class
+- Thowable interface implemented by two classes: Error and Exception
+- Error is a kind of exceptional condition from which program cannot recover. Example: OutOfMemoryError, StackOverFlowError, etc
