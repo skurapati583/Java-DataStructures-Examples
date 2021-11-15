@@ -120,3 +120,25 @@ Example: FileNotFoundException (while reading file), InterruptedException, IOExc
 - All unchecked exceptions are direct sub-classes of RuntimeException, which inturn sub-class of Exception class
 - Thowable interface implemented by two classes: Error and Exception
 - Error is a kind of exceptional condition from which program cannot recover. Example: OutOfMemoryError, StackOverFlowError, etc
+
+**4. Difference between Array and ArrayList**
+
+- Array should have fixed size, whereas ArrayList do not have fixed size and can grow and shrink automatically
+- Arrays can only hold primitive types, whereas ArrayList holds only type wrappers and objects
+- In Arrays, length of array can be found by "length" field whereas in ArrayList, size of ArrayList() found by size() method   
+- Printing Arrays returning some random text. Printing ArrayList shows decent display of items inside ArrayList
+
+**5. == vs .equals()**
+
+- Primitive variables actually refer to actual values. Type wrapper variables refers to memory location.
+- While doing "==", Java is checking the underlying memory locations of those two objects.
+- .equals() method actually checks the equality of contents inside both objects memory locations
+- == best used for primitive types comparision
+- .equals() for objects comparision
+- It is preferred to write custom equals() method for a class for convinience like below
+```Java
+public boolean equals(Object obj) {
+    // Custom logic to determine object equality
+    return true; // or return false
+}
+```
