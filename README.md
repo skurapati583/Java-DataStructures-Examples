@@ -160,3 +160,7 @@ public boolean equals(Object obj) {
 - start() method should be called in order to execute in seperate thread
 - isAlive() method returns if the current thread is alive or not
 - join() method stops the program until the current thread is completed
+
+
+**7. Why array or any list indices starts with 0?**
+When a array of, for example, size=5 is initialized, computer will allocate five consective empty memory cells to this array and computer stores the address for first memory cell. So when a program access array of index 3, computer will search at first memory cell plus 3 places to find the address.
